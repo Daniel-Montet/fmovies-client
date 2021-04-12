@@ -4,9 +4,9 @@ export default function Login(props) {
     return (
         <>
             {/* <!-- Button trigger modal --> */}
-                        <button type="button" className="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                            Login
-                        </button>
+                        <a type="button" className="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                            <i class="fas fa-user-circle"></i> Login
+                        </a>
 
                         {/* <!-- Modal --> */}
                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
@@ -16,14 +16,14 @@ export default function Login(props) {
                                         <button type="button" className="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div className="modal-body">
-                                        <div class="form-outline">
-                                            <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Email</label>
-                                        </div><div class="form-outline">
-                                            <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Password</label>
+                                        <div className="form-outline">
+                                            <input type="text" id="form1" className="form-control" />
+                                            <label className="form-label" htmlFor="form1">Email</label>
+                                        </div><div className="form-outline">
+                                            <input type="text" id="form1" className="form-control" />
+                                            <label className="form-label" htmlFor="form1">Password</label>
                                         </div>
-                                        <div class="form-helper">Forgot Password ?</div>
+                                        <div className="form-helper">Forgot Password ?</div>
                                         <button type="button" className="btn btn-primary">Login</button>
                                     </div>
                                     <div className="modal-footer">
@@ -36,7 +36,6 @@ export default function Login(props) {
                                 </div>
                             </div>
                         </div>
-                    
         </>
     )
 }

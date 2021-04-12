@@ -3,9 +3,9 @@ import PageButton from '../components/PageButton';
 
 export default function PageLayout(props) {
     return (
-        <div class="container-fluid">
+        <div className="container-fluid">
             <PageButton pageName={props.pageName}/>
-            <GridCards/>
+            <GridCards movies={props.movies}/>
         </div>
     )
 }

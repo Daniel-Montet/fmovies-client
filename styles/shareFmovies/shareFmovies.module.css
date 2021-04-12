@@ -1,0 +1,16 @@
+.margin {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.margin a {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    margin-right: 2px;
+}
+
+.margin a:hover {
+    transform: translateY(3);
+}

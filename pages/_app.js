@@ -1,5 +1,12 @@
 import '../styles/globals.css'
 import Head from 'next/head';
+import { ApolloClient, ApolloProvider, InMemoryCache,gql } from "@apollo/client";
+import $ from "jquery";
+
+const client = new ApolloClient({
+	uri: "http://localhost:5000/graphql",
+	cache: new InMemoryCache()
+});
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -27,8 +34,9 @@ function MyApp({ Component, pageProps }) {
 					src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
 				></script>
 			</Head>
-
-			<Component {...pageProps} />
+			<ApolloProvider client={client}>
+				<Component {...pageProps} />
+			</ApolloProvider>
 		</>
 	)
 }

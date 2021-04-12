@@ -1,8 +1,52 @@
 .navbarLight {
-    background-color: #131519;
+    background-color: transparent;
+    padding: 2vh 0 0 2vh;
+    position: absolute;
+    z-index: 5;
+    width: 100vw;
+    outline: 0;
+    border:0;
 }
 
-.active {
-    color: #0397d6;
-    border-color: #0397d6;
+.navbarLight a {
+    color: #bbb;
+    margin: 0 2vw 0 0;
+}
+
+.navbarLight a:hover {
+    color: #00acc1;
+}
+.navbarLight img{
+    height: 6vh;
+    width: 10vw;
+    margin:0 1vw 0 0; 
+}
+
+
+
+.search {
+    height:6vh;
+    border-radius: 22.5px;
+    line-height: 100%;
+    padding-top: 5px;
+    padding-left: 22.5px;
+    padding-right: 50px;
+    border: none;
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+    margin-right: auto;
+    pointer-events: all;
+}
+
+.search:hover {
+    color: black;
+    background-color: #bbb;
+}
+
+.searchIcon {
+    padding: 5px;
 }

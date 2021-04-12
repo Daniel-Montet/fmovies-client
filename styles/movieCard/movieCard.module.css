@@ -1,0 +1,194 @@
+.movieCard {
+    height: 28rem;
+    width: 16rem;
+    background-color: transparent;
+}
+
+.movieCardImage {
+    height: 100%;
+}
+
+.cardFooter {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.title {
+    color: #e9ecef;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+}
+
+.meta {
+    display: inline-flex;
+    font-size: .9em;
+    height: 50px;
+    overflow: hidden;
+    color: #959595;
+    position: relative;
+    width: 100%;
+}
+
+.type {
+    font-style: normal;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: .8em;
+    height: 1.5rem;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    color: #959595;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    vertical-align: 2px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    background: #d5d5d5;
+    content: "";
+    margin: 8px 5px 0 5px;
+}
+
+.text {
+    color: #959595;
+}
+
+.quality {
+    background: #f8f9fa;
+    color: #212529;
+    float: left;
+    margin-left: 5px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 30px #000;
+    text-transform: uppercase;
+}
+
+.icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    font-size: .86em;
+    font-weight: 500;
+}
+
+.wrap {
+    background: #00acc1;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    height: 55px;
+    left: 35%;
+    width: 55px;
+    text-align: center;
+    padding: 18px;
+}
+
+.maskPlayIcon {
+    color: white;
+    -webkit-transition: all,ease-in-out .2s;
+    -moz-transition: all,ease-in-out .2s;
+    transition: all,ease-in-out .2s; 
+}
+
+.movieTooltipOnRight {
+    height: 20rem;
+    width: 10rem;
+    background:red;
+    position: absolute; 
+    z-index: 500;
+    top: 0;
+    left: 19rem; 
+    float: right;
+    color: white;
+}
+
+
+.movieTooltipOnLeft {
+    height: 20rem;
+    width: 10rem;
+    background:red;
+    position: absolute; 
+    z-index: 500;
+    top: 0;
+    right: 19rem; 
+    float: right;
+    color: white;
+}
+
+.movieTooltipOff {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+   .movieCard {
+    width: 45vw;
+    height: 45vh;
+  }
+
+    .movieTooltipOff,  .movieTooltipOnLeft,.movieTooltipOnRight{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+   .movieCard {
+    width: 30vw;
+    height: 35vh;
+  }
+
+    .movieTooltipOff,  .movieTooltipOnLeft,.movieTooltipOnRight {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+   .movieCard {
+    width: 45vw;
+    height: 50vh;
+  }
+
+    .movieTooltipOff,  .movieTooltipOnLeft,.movieTooltipOnRight {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+   .movieCard {
+    width: 30vw;
+    height: 30vh;
+  }
+
+    .movieTooltipOff,  .movieTooltipOnLeft,.movieTooltipOnRight {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+   .movieCard {
+    width: 15vw;
+    height: 28rem;
+  }
+
+     .movieTooltipOnLeft,.movieTooltipOnRight {
+        display: block;
+    }
+
+} 

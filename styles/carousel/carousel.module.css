@@ -1,0 +1,117 @@
+.overlay::after {
+    background-image: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.3));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    content: " ";
+    box-shadow: inset 1rem -6rem 5rem 0rem #111;
+}
+
+
+.caption {
+    position: absolute;
+    left: 2vw;
+    top: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    z-index: 50;
+    width: 47vw;
+}
+
+.metadata, .dataList {
+    display: flex;
+    flex-direction: row;
+}
+
+.metadata {
+    margin-bottom: 1.2em;
+    font-size: .85em;
+}
+
+.margin {
+   margin-right: 20px; 
+} 
+
+.dataTitle {
+    font-size: 3em;
+    margin-bottom: .2em;
+
+}
+
+
+.dataItem {
+    padding: 0 15px 0 0;
+}
+
+.dataQuality {
+    background: #00acc1;
+    color: #212529;
+    font-weight: 500;
+    font-size: .85em;
+    text-shadow: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.dataGenre {
+    padding: 0 5px 0 0;
+}
+
+.desc {
+    font-size: 1em;
+    color: #adb5bd;
+    font-weight: 300;
+    text-shadow: 0 1px 15px #111;
+    margin-bottom: 1.8em;
+}
+.dataButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.watchNow {
+    border: solid thin;
+    border-radius: 25px;
+    border-color: #00acc1;
+    color: #00acc1;
+    margin-right: 20px;
+}
+
+.watchNow:hover {
+    background: #0095a8;
+    color: #000;
+}
+
+.watchLater {
+    border: solid thin;
+    border-radius: 25px;
+    border-color: rgba(255,255,255,.3);
+    color: #bbb;
+}
+
+.watchLater:hover {
+    background-color: #ccc;
+    border-color: rgba(255,255,255,.5);
+    color: #000;
+}
+
+.carouselIndicators [data-mdb-target] {
+    width: 10px;
+    height:10px;
+    background-color:#bbb;
+    margin-right: 8px;
+
+}
+
+.dots {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.carouselIndicators [data-mdb-target]:hover{
+    background-color: #0095a8;
+}

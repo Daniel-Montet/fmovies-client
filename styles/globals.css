@@ -1,15 +1,22 @@
 html,
 body {
-    background-color: #1e2129;
-    color: #131519;
-    font-family: 'Roboto';
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #bbb;
+    text-align: left;
+    background-color: #111;
+    height: 100%;
+    overflow-x: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
+
+@media screen and (max-width: 480px) {
+   .col, .col-6, .col-sm-4, .col-lg-3, .col-xl-3 {
+        padding: 0;
+    }
+
 }

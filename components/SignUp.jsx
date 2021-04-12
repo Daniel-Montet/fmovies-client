@@ -17,21 +17,21 @@ export default function SignUp(props) {
                                     <div className="modal-body">
                                         <div class="form-outline">
                                             <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Full name</label>
+                                            <label class="form-label" htmlFor="form1">Full name</label>
                                         </div><div class="form-outline">
                                             <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Username</label>
+                                            <label class="form-label" htmlFor="form1">Username</label>
                                         </div>
                                         <div class="form-outline">
                                             <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Email address</label>
+                                            <label class="form-label" htmlFor="form1">Email address</label>
                                         </div><div class="form-outline">
                                             <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Password</label>
+                                            <label class="form-label" htmlFor="form1">Password</label>
                                         </div>
                                         <div class="form-outline">
                                             <input type="text" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Confirm password</label>
+                                            <label class="form-label" htmlFor="form1">Confirm password</label>
                                         </div>
                                     </div>
                                     <div className="modal-footer">
