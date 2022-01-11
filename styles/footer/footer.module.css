@@ -1,0 +1,29 @@
+.title {
+    color: white;
+}
+
+.link,.outro {
+    color: #bbb;
+}
+
+.small {
+    color: white;
+    font-style: italic;
+}
+
+.link {
+    margin-top: 0.5rem;
+}
+.link:hover {
+    color: #00acc1;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

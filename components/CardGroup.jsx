@@ -3,6 +3,7 @@ import MovieCard from "./MovieCard";
 import _ from "lodash";
 import CardgroupRow from "./cardGroupRow";
 import styles from "../styles/cardGroup/cardGroup.module.css";
+import Link from "next/link";
 
 
 export default function CardGroup(props) {
@@ -11,6 +12,27 @@ export default function CardGroup(props) {
     
     return (
         <div className={"container-fluid overflow-hidden " + styles.margin}>
+            <div className={"row " + styles.row}>
+                <div className="col-3">
+                    <h2>{props.title}</h2>
+                </div>
+                <div className="col-4">
+                    {/* <a className="btn me-2" style={{"backgroundColor": "#55acee"}} href="#!" role="button">
+                        <i className="fab fa-twitter me-2"></i>Twitter
+                    </a>
+                    <a className="btn me-2" style={{"backgroundColor": "#55acee"}} href="#!" role="button">
+                        <i className="fab fa-twitter me-2"></i>Twitter
+                    </a>
+                    <a className="btn me-2" style={{"backgroundColor": "#55acee"}} href="#!" role="button">
+                        <i className="fab fa-twitter me-2"></i>Twitter
+                    </a> */}
+                </div>
+                <div className="col-5">
+                    <Link href="#" >
+                        <a className={styles.more}>View all <i class="fas fa-chevron-circle-right"></i></a> 
+                    </Link>
+                </div>
+            </div>
             { rows }
         </div>
     )

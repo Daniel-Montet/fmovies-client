@@ -1,5 +1,15 @@
 .margin {
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.more {
+    float: right;
+    text-align: center;
+    padding: 5px;
 }

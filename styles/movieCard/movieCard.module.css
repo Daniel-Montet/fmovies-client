@@ -25,6 +25,13 @@
     cursor: pointer;
 }
 
+.title2 {
+    color: #e9ecef;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
 .meta {
     display: inline-flex;
     font-size: .9em;
@@ -34,6 +41,77 @@
     position: relative;
     width: 100%;
 }
+
+.meta2 {
+    font-size: .9em;
+    margin-top: 10px;
+    color: #949ea9;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meta2  span {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.meta2 span a {
+    margin: 0 2px;
+}
+
+.meta2  div {
+    font-size: .85em;
+    display: block;
+    width: 100%;
+}
+
+.meta2 div a,.meta2 div span:first-child, .imdb {
+    color: #b5bdc4;
+}
+.actions {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.text-right {
+    text-align: right!important;
+}
+
+
+.bookmark {
+    float: right;
+    line-height: 35px;
+    width: 35px;
+    background: #d73458;
+    color: #e9ecef;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.watchnow {
+    line-height: 21px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 45px;
+    background: #333940;
+    color: #ced4da;
+    height: 3rem;
+}
+
+.watchnow i {
+    font-size: .8em;
+    vertical-align: 1px;
+    color: #00acc1;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: .85em;
+    font-weight: 300;
+}
+
 
 .type {
     font-style: normal;
@@ -105,28 +183,42 @@
 }
 
 .movieTooltipOnRight {
-    height: 20rem;
-    width: 10rem;
-    background:red;
-    position: absolute; 
-    z-index: 500;
-    top: 0;
-    left: 19rem; 
-    float: right;
-    color: white;
+    position: absolute;
+    top: 65px;
+    left: 15rem;
+    min-width: 260px;
+    max-width: 260px;
+    pointer-events: auto;
+    z-index: 9999999;
+    height: 260px;
+    width: 260px;
+    animation-duration: 350ms;
+    transition-duration: 350ms;
+    background: #212529;
+    border: none;
+    border-radius: 6px;
 }
 
+.tooltipContent {
+        color: #949ea9;
+    padding: 10px 15px;
+}
 
 .movieTooltipOnLeft {
-    height: 20rem;
-    width: 10rem;
-    background:red;
-    position: absolute; 
-    z-index: 500;
-    top: 0;
-    right: 19rem; 
-    float: right;
-    color: white;
+    position: absolute;
+    top: 65px;
+    right: 15rem;
+    min-width: 260px;
+    max-width: 260px;
+    pointer-events: auto;
+    z-index: 9999999;
+    height: 260px;
+    width: 260px;
+    animation-duration: 350ms;
+    transition-duration: 350ms;
+    background: #212529;
+    border: none;
+    border-radius: 6px;;
 }
 
 .movieTooltipOff {
