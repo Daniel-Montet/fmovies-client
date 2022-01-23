@@ -1,4 +1,4 @@
-I got bored and decided to create a clone of the famous movie piracy website fmovies.
+I decided to create a clone of the famous movie piracy website fmovies because, why not? 
 
 ## Getting Started
 
